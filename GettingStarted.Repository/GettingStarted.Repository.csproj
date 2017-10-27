@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+	<!-- <RuntimeIdentifiers>win10-x64;debian-x32</RuntimeIdentifiers> -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.2" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GettingStarted.Entities\GettingStarted.Entities.csproj" />
+    <ProjectReference Include="..\GettingStarted.Repository.Interfaces\GettingStarted.Repository.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

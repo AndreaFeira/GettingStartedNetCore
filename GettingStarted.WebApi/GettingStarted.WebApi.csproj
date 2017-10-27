@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+	<RuntimeIdentifiers>win10-x64;osx.10.11-x64;debian-x64</RuntimeIdentifiers>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GettingStarted.Business.Interfaces\GettingStarted.Business.Interfaces.csproj" />
+    <ProjectReference Include="..\GettingStarted.Business\GettingStarted.Business.csproj" />
+    <ProjectReference Include="..\GettingStarted.Repository.Interfaces\GettingStarted.Repository.Interfaces.csproj" />
+    <ProjectReference Include="..\GettingStarted.Repository\GettingStarted.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+	<!-- <RuntimeIdentifiers>win10-x64;debian-x32</RuntimeIdentifiers> -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GettingStarted.Business.Interfaces\GettingStarted.Business.Interfaces.csproj" />
+    <ProjectReference Include="..\GettingStarted.Entities\GettingStarted.Entities.csproj" />
+    <ProjectReference Include="..\GettingStarted.Repository.Interfaces\GettingStarted.Repository.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
